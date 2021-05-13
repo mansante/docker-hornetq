@@ -3,6 +3,7 @@ MAINTAINER mansante <mansante@gmail.com>
 
 ENV HORNETQ_VERSION 2.4.0.Final 
 ENV HORNETQ_HOME /opt/hornetq-${HORNETQ_VERSION}
+ENV JAVA_MAX_HEAP 1024
 
 RUN mkdir ${HORNETQ_HOME} \
   && curl -sSL http://downloads.jboss.org/hornetq/hornetq-${HORNETQ_VERSION}-bin.tar.gz \
